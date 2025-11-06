@@ -1,0 +1,28 @@
+{
+  "name": "tre-ba-de-backend",
+  "version": "1.0.0",
+  "description": "Backend API cho website Tré Bà Đệ - OCOP 4 Sao",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "tre",
+    "ocop",
+    "ecommerce",
+    "backend"
+  ],
+  "author": "Tré Bà Đệ",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "nodemailer": "^6.9.7",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

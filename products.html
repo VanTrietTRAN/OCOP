@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm - Tré Bà Đệ OCOP 4 Sao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>TRÉ BÀ ĐỆ</h1>
+                    <span class="ocop-badge">OCOP 4★</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html">Câu Chuyện</a></li>
+                    <li><a href="products.html" class="active">Sản Phẩm</a></li>
+                    <li><a href="blog.html">Góc Ẩm Thực</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+                <div class="nav-cart">
+                    <button class="cart-btn" id="cartBtn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>BỘ SƯU TẬP DI SẢN OCOP 4-SAO</h1>
+            <p>Sản phẩm được chứng nhận OCOP cấp Quốc gia</p>
+        </div>
+    </section>
+
+    <!-- Products List -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid-large">
+                <!-- Product 1 Detail -->
+                <div class="product-detail-card" id="product-1">
+                    <div class="product-detail-images">
+                        <div class="main-image">
+                            <img src="images/tre-xau-main.jpg" alt="Tré Xâu Gia Truyền" onerror="this.src='https://via.placeholder.com/600x600?text=Tr%C3%A9+X%C3%A2u+Gia+Truy%E1%BB%81n'">
+                            <div class="product-badge-large">OCOP 4★</div>
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="images/tre-xau-1.jpg" alt="Tré 1" onerror="this.src='https://via.placeholder.com/150x150?text=1'">
+                            <img src="images/tre-xau-2.jpg" alt="Tré 2" onerror="this.src='https://via.placeholder.com/150x150?text=2'">
+                            <img src="images/tre-xau-3.jpg" alt="Tré 3" onerror="this.src='https://via.placeholder.com/150x150?text=3'">
+                            <img src="images/tre-xau-4.jpg" alt="Tré 4" onerror="this.src='https://via.placeholder.com/150x150?text=4'">
+                        </div>
+                    </div>
+                    
+                    <div class="product-detail-info">
+                        <h2 class="product-detail-title">TRÉ XÂU GIA TRUYỀN</h2>
+                        <p class="product-detail-subtitle">(OCOP 4-Sao)</p>
+                        <div class="product-price-large">85.000 VNĐ</div>
+                        <p class="product-short-desc">
+                            Di sản nguyên bản từ 1956. Tré được ủ thủ công trong lá chuối, bọc rơm, lên men tự nhiên. 
+                            Vị chua thanh, cay nồng, giòn sật. Món quà không thể thiếu từ Đà Nẵng.
+                        </p>
+                        
+                        <div class="product-purchase">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="qty-input" id="qty-1">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-large" data-id="1" data-name="Tré Xâu Gia Truyền" data-price="85000">
+                                THÊM VÀO GIỎ HÀNG
+                            </button>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="product-tabs">
+                            <div class="tab-buttons">
+                                <button class="tab-btn active" data-tab="description">Mô tả chi tiết</button>
+                                <button class="tab-btn" data-tab="howto">Hướng dẫn thưởng thức</button>
+                            </div>
+                            
+                            <div class="tab-content active" id="description">
+                                <h3>Thông tin sản phẩm</h3>
+                                <ul class="product-specs">
+                                    <li><strong>Thương hiệu:</strong> Tré Bà Đệ (Ông Chánh)</li>
+                                    <li><strong>Xuất xứ:</strong> 77 Hải Phòng, Đà Nẵng, Việt Nam</li>
+                                    <li><strong>Chứng nhận:</strong> OCOP 4-Sao</li>
+                                    <li><strong>Thành phần:</strong> 100% thịt đầu heo sạch (tai, mũi, bì), riềng, tỏi, thính nếp, mè, lá ổi, lá chuối</li>
+                                    <li><strong>Quy cách:</strong> Xâu 10 cái (tương đương 500g), buộc rơm thủ công</li>
+                                    <li><strong>Hạn dùng:</strong> 20-30 ngày ở nhiệt độ thường (tré sẽ chua dần)</li>
+                                    <li><strong>Bảo quản:</strong> Bảo quản ngăn mát tủ lạnh để hãm độ chua nếu đã vừa khẩu vị</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-content" id="howto">
+                                <h3>NGHỆ THUẬT THƯỞNG TRÉ "CHUẨN VỊ 77"</h3>
+                                <div class="howto-steps">
+                                    <div class="howto-step">
+                                        <span class="howto-number">1</span>
+                                        <div>
+                                            <h4>Bóc tré</h4>
+                                            <p>Lột bỏ lớp rơm vàng và các lớp lá chuối bên ngoài cho đến khi thấy lớp lá ổi non (lớp lá này không ăn được).</p>
+                                        </div>
+                                    </div>
+                                    <div class="howto-step">
+                                        <span class="howto-number">2</span>
+                                        <div>
+                                            <h4>Đánh tơi</h4>
+                                            <p>Dùng đũa đánh tơi các sợi tré đã kết dính vào nhau. Bạn sẽ ngay lập tức cảm nhận được hương thơm nồng đặc trưng của riềng và thính.</p>
+                                        </div>
+                                    </div>
+                                    <div class="howto-step">
+                                        <span class="howto-number">3</span>
+                                        <div>
+                                            <h4>Thưởng thức</h4>
+                                            <p>Tré Bà Đệ ngon nhất khi ăn kèm tỏi tươi, dưa chua (đu đủ, cà rốt) và tương ớt rim Đà Nẵng. Cuốn bánh tráng cùng rau sống cũng là một trải nghiệm tuyệt vời.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 Detail -->
+                <div class="product-detail-card" id="product-2">
+                    <div class="product-detail-images">
+                        <div class="main-image">
+                            <img src="images/tre-tron-main.jpg" alt="Tré Trộn Tiện Lợi" onerror="this.src='https://via.placeholder.com/600x600?text=Tr%C3%A9+Tr%E1%BB%99n+Ti%E1%BB%87n+L%E1%BB%A3i'">
+                            <div class="product-badge-large">OCOP 4★</div>
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="images/tre-tron-1.jpg" alt="Tré trộn 1" onerror="this.src='https://via.placeholder.com/150x150?text=1'">
+                            <img src="images/tre-tron-2.jpg" alt="Tré trộn 2" onerror="this.src='https://via.placeholder.com/150x150?text=2'">
+                            <img src="images/tre-tron-3.jpg" alt="Tré trộn 3" onerror="this.src='https://via.placeholder.com/150x150?text=3'">
+                        </div>
+                    </div>
+                    
+                    <div class="product-detail-info">
+                        <h2 class="product-detail-title">TRÉ TRỘN TIỆN LỢI</h2>
+                        <p class="product-detail-subtitle">(Hộp 500g)</p>
+                        <div class="product-price-large">Liên hệ</div>
+                        <p class="product-short-desc">
+                            Dành cho nhịp sống hiện đại. Hương vị 77 Hải Phòng nay đã được trộn sẵn với tỷ lệ vàng, 
+                            giữ trọn vị giòn sật, chua thanh. Chỉ cần mở hộp là bạn đã có ngay một đĩa "mồi" bén đúng chuẩn.
+                        </p>
+                        
+                        <div class="product-purchase">
+                            <a href="contact.html" class="btn btn-primary btn-block">LIÊN HỆ ĐẶT HÀNG</a>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="product-tabs">
+                            <div class="tab-buttons">
+                                <button class="tab-btn active" data-tab="description2">Mô tả chi tiết</button>
+                                <button class="tab-btn" data-tab="howto2">Hướng dẫn sử dụng</button>
+                            </div>
+                            
+                            <div class="tab-content active" id="description2">
+                                <h3>Thông tin sản phẩm</h3>
+                                <ul class="product-specs">
+                                    <li><strong>Thương hiệu:</strong> Tré Bà Đệ (Ông Chánh)</li>
+                                    <li><strong>Xuất xứ:</strong> 77 Hải Phòng, Đà Nẵng, Việt Nam</li>
+                                    <li><strong>Chứng nhận:</strong> OCOP 4-Sao</li>
+                                    <li><strong>Thành phần:</strong> Tré đã trộn sẵn với tỷ lệ hoàn hảo</li>
+                                    <li><strong>Quy cách:</strong> Hộp 500g</li>
+                                    <li><strong>Hạn dùng:</strong> 7-10 ngày trong ngăn mát tủ lạnh</li>
+                                    <li><strong>Bảo quản:</strong> Bảo quản ngăn mát tủ lạnh</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-content" id="howto2">
+                                <h3>HƯỚNG DẪN SỬ DỤNG</h3>
+                                <div class="howto-steps">
+                                    <div class="howto-step">
+                                        <span class="howto-number">1</span>
+                                        <div>
+                                            <h4>Mở hộp</h4>
+                                            <p>Tré đã được trộn sẵn, chỉ cần mở hộp và múc ra đĩa.</p>
+                                        </div>
+                                    </div>
+                                    <div class="howto-step">
+                                        <span class="howto-number">2</span>
+                                        <div>
+                                            <h4>Thưởng thức ngay</h4>
+                                            <p>Ăn kèm với bia lạnh, bánh tráng, hoặc làm món ăn kèm với cơm.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 Detail -->
+                <div class="product-detail-card" id="product-3">
+                    <div class="product-detail-images">
+                        <div class="main-image">
+                            <img src="images/cha-bo-main.jpg" alt="Chả Bò Bà Đệ" onerror="this.src='https://via.placeholder.com/600x600?text=Ch%E1%BA%A3+B%C3%B2+B%C3%A0+%C4%90%E1%BB%87'">
+                            <div class="product-badge-large">OCOP 4★</div>
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="images/cha-bo-1.jpg" alt="Chả bò 1" onerror="this.src='https://via.placeholder.com/150x150?text=1'">
+                            <img src="images/cha-bo-2.jpg" alt="Chả bò 2" onerror="this.src='https://via.placeholder.com/150x150?text=2'">
+                        </div>
+                    </div>
+                    
+                    <div class="product-detail-info">
+                        <h2 class="product-detail-title">CHẢ BÒ BÀ ĐỆ</h2>
+                        <p class="product-detail-subtitle">(OCOP 4-Sao)</p>
+                        <div class="product-price-large">120.000 VNĐ/kg</div>
+                        <p class="product-short-desc">
+                            Chả bò dai giòn, thơm nức mũi. Được làm từ thịt bò tươi ngon, giã thủ công theo công thức gia truyền. 
+                            Món ăn không thể thiếu trong các bữa tiệc và dịp lễ Tết.
+                        </p>
+                        
+                        <div class="product-purchase">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="qty-input" id="qty-3">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-large" data-id="3" data-name="Chả Bò Bà Đệ" data-price="120000">
+                                THÊM VÀO GIỎ HÀNG
+                            </button>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="product-tabs">
+                            <div class="tab-buttons">
+                                <button class="tab-btn active" data-tab="description3">Mô tả chi tiết</button>
+                            </div>
+                            
+                            <div class="tab-content active" id="description3">
+                                <h3>Thông tin sản phẩm</h3>
+                                <ul class="product-specs">
+                                    <li><strong>Thương hiệu:</strong> Tré Bà Đệ (Ông Chánh)</li>
+                                    <li><strong>Xuất xứ:</strong> 77 Hải Phòng, Đà Nẵng, Việt Nam</li>
+                                    <li><strong>Chứng nhận:</strong> OCOP 4-Sao</li>
+                                    <li><strong>Thành phần:</strong> Thịt bò tươi, tinh bột, gia vị tự nhiên</li>
+                                    <li><strong>Quy cách:</strong> Bán theo kg</li>
+                                    <li><strong>Hạn dùng:</strong> 3-5 ngày ở nhiệt độ thường, 1 tháng trong ngăn đá</li>
+                                    <li><strong>Bảo quản:</strong> Bảo quản ngăn mát hoặc ngăn đá tủ lạnh</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TRÉ BÀ ĐỆ</h3>
+                    <p class="brand-slogan"><strong>Tinh hoa gia truyền, đậm vị Đà Nẵng</strong></p>
+                    <p>Di sản ẩm thực gia truyền từ 1956</p>
+                    <p class="ocop-footer">🏆 Di sản OCOP 4-sao. Bảo chứng cho chất lượng.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="about.html">Câu Chuyện</a></li>
+                        <li><a href="products.html">Sản Phẩm</a></li>
+                        <li><a href="blog.html">Góc Ẩm Thực</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <p>📍 77 Hải Phòng, P. Thạch Thang<br>Q. Hải Châu, Đà Nẵng</p>
+                    <p>📞 0963 403 222</p>
+                    <p>✉️ hop-tac@trebade.com.vn</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Giờ Mở Cửa</h4>
+                    <p>7:00 Sáng - 9:00 Tối</p>
+                    <p>(Tất cả các ngày)</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tré Bà Đệ - 77 Hải Phòng. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup" id="cartPopup">
+        <div class="cart-popup-content">
+            <div class="cart-popup-header">
+                <h3>Giỏ Hàng</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Giỏ hàng trống</p>
+            </div>
+            <div class="cart-total">
+                <strong>Tổng cộng:</strong>
+                <span id="cartTotal">0 VNĐ</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">THANH TOÁN</button>
+        </div>
+    </div>
+
+    <!-- JavaScript modules in dependency order -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

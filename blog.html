@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góc Ẩm Thực - Tré Bà Đệ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>TRÉ BÀ ĐỆ</h1>
+                    <span class="ocop-badge">OCOP 4★</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html">Câu Chuyện</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="blog.html" class="active">Góc Ẩm Thực</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+                <div class="nav-cart">
+                    <button class="cart-btn" id="cartBtn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>GÓC ẨM THỰC</h1>
+            <p>Khám phá văn hóa và nghệ thuật thưởng thức đặc sản</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card featured">
+                    <div class="blog-image">
+                        <img src="images/blog-1.jpg" alt="Vua mồi Đà Nẵng" onerror="this.src='https://via.placeholder.com/800x500?text=Gi%E1%BA%A3i+M%C3%A3+S%E1%BB%A9c+H%C3%BAt'">
+                        <span class="blog-category">Chuyên sâu</span>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">GIẢI MÃ SỨC HÚT CỦA TRÉ BÀ ĐỆ: VÌ SAO ĐÂY LÀ 'VUA MỒI' CỦA ĐÀ NẴNG?</h2>
+                        <p class="blog-meta">📅 15 Tháng 10, 2024 | ✍️ Đội ngũ Tré Bà Đệ</p>
+                        <p class="blog-excerpt">
+                            Tré Bà Đệ không chỉ là một món ăn, mà là một hiện tượng ẩm thực độc đáo. 
+                            Vậy điều gì khiến món "mồi" này trở nên không thể thiếu trong mọi cuộc vui của người Đà Nẵng?
+                        </p>
+                        <a href="#article-1" class="btn btn-secondary read-more">ĐỌC TIẾP</a>
+                    </div>
+                </article>
+
+                <!-- Full Article 1 Content (Hidden initially) -->
+                <div class="full-article" id="article-1">
+                    <div class="article-content">
+                        <button class="close-article">&times;</button>
+                        <h1>GIẢI MÃ SỨC HÚT CỦA TRÉ BÀ ĐỆ: VÌ SAO ĐÂY LÀ 'VUA MỒI' CỦA ĐÀ NẴNG?</h1>
+                        <p class="article-meta">📅 15 Tháng 10, 2024 | ✍️ Đội ngũ Tré Bà Đệ</p>
+                        
+                        <img src="images/blog-1-full.jpg" alt="Tré - Vua mồi" onerror="this.src='https://via.placeholder.com/1200x600?text=Tr%C3%A9+-+Vua+m%E1%BB%93i'" class="article-image">
+                        
+                        <h2>Tré Bà Đệ: Một Món Ăn "Umami" Tự Nhiên</h2>
+                        <p>
+                            Trong khoa học ẩm thực hiện đại, người ta nhận ra rằng có 5 vị cơ bản: ngọt, mặn, chua, đắng và umami 
+                            (vị ngon, vị đậm đà). Tré Bà Đệ là một trong những món ăn hiếm hoi kết hợp hoàn hảo tất cả các tầng vị này, 
+                            tạo nên một trải nghiệm vị giác đầy phức tạp và đầy mê hoặc.
+                        </p>
+                        
+                        <h2>Vị Chua Thanh - Khơi Gợi Cảm Giác Thèm Ăn</h2>
+                        <p>
+                            Vị chua từ quá trình lên men tự nhiên không chỉ đơn thuần là một hương vị, mà còn là chất xúc tác mạnh mẽ 
+                            kích thích tuyến nước bọt. Khi bạn nếm thử miếng tré đầu tiên, vị chua thanh ngay lập tức "đánh thức" 
+                            vị giác, khiến bạn cảm thấy thèm ăn và muốn thưởng thức thêm.
+                        </p>
+                        
+                        <h2>Vị Cay Nồng - Làm Ấm Cơ Thể</h2>
+                        <p>
+                            Riềng - thành phần đặc trưng trong công thức Tré Bà Đệ - mang đến vị cay nồng đặc biệt, khác biệt hoàn toàn 
+                            với ớt. Đây là loại cay "ấm bụng", giúp tăng cường tuần hoàn máu, tạo cảm giác ấm áp và dễ chịu, 
+                            đặc biệt lý tưởng cho những buổi nhậu đêm se lạnh ở Đà Nẵng.
+                        </p>
+                        
+                        <h2>Độ Giòn Sật - Tạo Cảm Giác "Vui Miệng"</h2>
+                        <p>
+                            Tré Bà Đệ được làm từ các phần sụn giòn của tai, mũi, bì heo - những phần tạo nên kết cấu "sật sật" độc đáo. 
+                            Khi nhai, âm thanh giòn rụp và cảm giác dai giòn vừa phải kích thích não bộ tiết ra dopamine, 
+                            hormone hạnh phúc. Đó là lý do tại sao một khi bắt đầu ăn tré, rất khó có thể dừng lại!
+                        </p>
+                        
+                        <h2>Sự Kết Hợp Hoàn Hảo Với Bia</h2>
+                        <p>
+                            Tré Bà Đệ được mệnh danh là "vua mồi" không chỉ vì hương vị đặc trưng, mà còn vì khả năng cân bằng hoàn hảo 
+                            với vị đắng của bia. Vị chua thanh giúp "làm sạch" vòm họng, vị cay nồng tăng cảm giác khát, 
+                            và độ giòn sật tạo sự tương phản tuyệt vời với độ mát lạnh của bia. 
+                            Kết quả là một chu trình "ăn - uống - ăn tiếp" không bao giờ chán.
+                        </p>
+                        
+                        <h2>Kết Luận</h2>
+                        <p>
+                            Tré Bà Đệ không phải ngẫu nhiên mà trở thành một phần không thể thiếu trong văn hóa ẩm thực Đà Nẵng. 
+                            Đó là sự kết hợp hoàn hảo giữa khoa học vị giác, nghệ thuật chế biến và tâm huyết của nhiều thế hệ. 
+                            Một món "mồi" không chỉ ngon, mà còn là một trải nghiệm văn hóa đích thực.
+                        </p>
+                        
+                        <div class="article-cta">
+                            <p><strong>Muốn trải nghiệm "vua mồi" chính hiệu?</strong></p>
+                            <a href="products.html" class="btn btn-primary">MUA NGAY TRÉ BÀ ĐỆ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-2.jpg" alt="Tré trong mâm cỗ Tết" onerror="this.src='https://via.placeholder.com/600x400?text=Tr%C3%A9+trong+m%C3%A2m+c%E1%BB%97+T%E1%BA%BFt'">
+                        <span class="blog-category">Hướng dẫn</span>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">TRÉ BÀ ĐỆ TRONG MÂM CỖ TẾT: Ý NGHĨA VÀ 3 CÁCH BÀY TRÍ SANG TRỌNG</h2>
+                        <p class="blog-meta">📅 20 Tháng 12, 2024 | ✍️ Đội ngũ Tré Bà Đệ</p>
+                        <p class="blog-excerpt">
+                            Tết đến xuân về, mâm cỗ Tết không thể thiếu món tré để "giải ngấy" hiệu quả. 
+                            Cùng khám phá ý nghĩa và cách bày trí tré sang trọng cho mùa xuân năm nay.
+                        </p>
+                        <a href="#article-2" class="btn btn-secondary read-more">ĐỌC TIẾP</a>
+                    </div>
+                </article>
+
+                <!-- Full Article 2 Content -->
+                <div class="full-article" id="article-2">
+                    <div class="article-content">
+                        <button class="close-article">&times;</button>
+                        <h1>TRÉ BÀ ĐỆ TRONG MÂM CỖ TẾT: Ý NGHĨA VÀ 3 CÁCH BÀY TRÍ SANG TRỌNG</h1>
+                        <p class="article-meta">📅 20 Tháng 12, 2024 | ✍️ Đội ngũ Tré Bà Đệ</p>
+                        
+                        <img src="images/blog-2-full.jpg" alt="Mâm cỗ Tết" onerror="this.src='https://via.placeholder.com/1200x600?text=M%C3%A2m+c%E1%BB%97+T%E1%BA%BFt'" class="article-image">
+                        
+                        <h2>Ý Nghĩa Của Tré Trong Mâm Cỗ Tết</h2>
+                        <p>
+                            Trong văn hóa ẩm thực Tết miền Trung, tré không chỉ là một món ăn khai vị đơn thuần, 
+                            mà còn mang ý nghĩa sâu sắc về sự cân bằng và hài hòa. Mâm cỗ Tết thường đầy ắp những món ăn đậm đà, 
+                            béo ngậy như thịt mỡ, bánh chưng, giò chả. Tré với vị chua thanh, cay nồng đóng vai trò "giải ngấy" 
+                            hiệu quả, giúp bữa ăn không bị nặng nề và giữ được sự cân bằng hương vị.
+                        </p>
+                        
+                        <h2>3 Cách Bày Trí Tré Sang Trọng</h2>
+                        
+                        <h3>Cách 1: Bày Trên Mẹt Tre Truyền Thống</h3>
+                        <p>
+                            Đây là cách bày trí cổ điển nhất, phù hợp với phong cách mâm cỗ truyền thống. 
+                            Bạn sử dụng một chiếc mẹt tre tròn (hoặc mẹt tre vuông), lót lá chuối hoặc lá dong phía dưới. 
+                            Tré được bày xung quanh thành vòng tròn, ở giữa đặt một bát nhỏ đựng tương ớt rim. 
+                            Xung quanh trang trí thêm dưa chua (đu đủ, cà rốt), rau sống (rau húng, kinh giới) 
+                            và vài lát tỏi tươi. Màu sắc hài hòa giữa xanh của rau, đỏ của tương, trắng của tré 
+                            tạo nên một bức tranh vừa truyền thống vừa bắt mắt.
+                        </p>
+                        
+                        <h3>Cách 2: Cuốn Bánh Tráng Thành Từng Cuốn Nhỏ</h3>
+                        <p>
+                            Cách bày này vừa sang trọng vừa tiện lợi cho khách. Bạn chuẩn bị bánh tráng nướng (hoặc bánh đa nem), 
+                            cắt thành từng miếng hình vuông vừa ăn. Mỗi miếng bánh tráng cuốn một ít tré, rau sống, 
+                            và một sợi ớt tươi. Xếp các cuốn tré thành hàng ngay ngắn trên đĩa hoặc khay, 
+                            trang trí bằng cà chua bi và lá húng. Cách này giúp khách dễ dàng thưởng thức mà không cần tự cuốn, 
+                            đặc biệt phù hợp với khách lớn tuổi hoặc khách từ xa chưa quen với món này.
+                        </p>
+                        
+                        <h3>Cách 3: Gỏi Tré Xoài Xanh (Món Fusion Hiện Đại)</h3>
+                        <p>
+                            Đây là cách bày trí sáng tạo, kết hợp giữa truyền thống và hiện đại. 
+                            Bạn trộn tré với xoài xanh thái sợi, rau răm, hành phi, đậu phộng rang, 
+                            và một ít nước mắm chua ngọt. Gỏi được bày trong một chiếc bát sứ trắng hoặc đĩa thủy tinh trong suốt, 
+                            trang trí bằng lá húng tươi và hạt mè rang. Món này vừa giữ được hương vị đặc trưng của tré, 
+                            vừa mang đến sự mới mẻ, thu hút thế hệ trẻ.
+                        </p>
+                        
+                        <h2>Lời Khuyên Khi Chọn Tré Cho Mâm Cỗ Tết</h2>
+                        <ul>
+                            <li>Chọn tré đã chín vừa phải, không quá chua để phù hợp với nhiều khẩu vị</li>
+                            <li>Đặt hàng trước 3-5 ngày để đảm bảo có tré tươi ngon nhất</li>
+                            <li>Bảo quản tré trong ngăn mát tủ lạnh để giữ độ tươi</li>
+                            <li>Chuẩn bị đủ lượng tré vì đây là món rất "dễ ăn" và thường hết nhanh!</li>
+                        </ul>
+                        
+                        <div class="article-cta">
+                            <p><strong>Đặt Tré Bà Đệ ngay hôm nay để đón Tết trọn vẹn!</strong></p>
+                            <a href="contact.html" class="btn btn-primary">ĐẶT HÀNG NGAY</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-3.jpg" alt="Hành trình OCOP" onerror="this.src='https://via.placeholder.com/600x400?text=H%C3%A0nh+tr%C3%ACnh+OCOP'">
+                        <span class="blog-category">Uy tín</span>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">HÀNH TRÌNH CHINH PHỤC OCOP 4-SAO: KHÔNG CHỈ LÀ HƯƠNG VỊ, MÀ LÀ UY TÍN</h2>
+                        <p class="blog-meta">📅 5 Tháng 11, 2024 | ✍️ Đội ngũ Tré Bà Đệ</p>
+                        <p class="blog-excerpt">
+                            Đằng sau tấm chứng nhận OCOP 4 sao là một hành trình nỗ lực không ngừng nghỉ. 
+                            Cùng khám phá những tiêu chí khắt khe mà Tré Bà Đệ đã vượt qua.
+                        </p>
+                        <a href="#article-3" class="btn btn-secondary read-more">ĐỌC TIẾP</a>
+                    </div>
+                </article>
+
+                <!-- Full Article 3 Content -->
+                <div class="full-article" id="article-3">
+                    <div class="article-content">
+                        <button class="close-article">&times;</button>
+                        <h1>HÀNH TRÌNH CHINH PHỤC OCOP 4-SAO: KHÔNG CHỈ LÀ HƯƠNG VỊ, MÀ LÀ UY TÍN</h1>
+                        <p class="article-meta">📅 5 Tháng 11, 2024 | ✍️ Đội ngũ Tré Bà Đệ</p>
+                        
+                        <img src="images/blog-3-full.jpg" alt="Chứng nhận OCOP" onerror="this.src='https://via.placeholder.com/1200x600?text=Ch%E1%BB%A9ng+nh%E1%BA%ADn+OCOP'" class="article-image">
+                        
+                        <h2>OCOP Là Gì?</h2>
+                        <p>
+                            OCOP (One Commune One Product - Mỗi Xã Một Sản Phẩm) là Chương trình quốc gia do Chính phủ Việt Nam triển khai 
+                            nhằm phát triển sản phẩm đặc trưng của từng địa phương, nâng cao giá trị kinh tế, văn hóa và xã hội. 
+                            Chương trình đánh giá sản phẩm theo 5 cấp sao (từ 1 sao đến 5 sao), trong đó 4 sao và 5 sao 
+                            là những cấp độ cao nhất, yêu cầu sản phẩm phải đạt các tiêu chuẩn vô cùng khắt khe.
+                        </p>
+                        
+                        <h2>Tiêu Chí 1: Vùng Nguyên Liệu Rõ Ràng</h2>
+                        <p>
+                            Để đạt OCOP 4 sao, Tré Bà Đệ phải chứng minh được nguồn gốc nguyên liệu minh bạch và ổn định. 
+                            Chúng tôi đã xây dựng hệ thống nhà cung cấp thịt heo đạt chuẩn VietGAP, với hợp đồng dài hạn 
+                            đảm bảo chất lượng đồng đều. Riềng, tỏi, thính đều được mua từ các nguồn uy tín, 
+                            có giấy chứng nhận an toàn thực phẩm.
+                        </p>
+                        
+                        <h2>Tiêu Chí 2: Quy Trình Sản Xuất Chuẩn Mực</h2>
+                        <p>
+                            Mặc dù là sản xuất thủ công, nhưng Tré Bà Đệ vẫn phải tuân thủ nghiêm ngặt các tiêu chuẩn 
+                            vệ sinh an toàn thực phẩm. Chúng tôi đã đầu tư nâng cấp cơ sở sản xuất, lắp đặt hệ thống camera giám sát, 
+                            thiết lập quy trình 5S, và đào tạo nhân viên về an toàn thực phẩm. Mọi công đoạn đều được ghi chép 
+                            và truy xuất nguồn gốc rõ ràng.
+                        </p>
+                        
+                        <h2>Tiêu Chí 3: Đóng Gói & Nhãn Mác Chuyên Nghiệp</h2>
+                        <p>
+                            Để sản phẩm được công nhận OCOP 4 sao, bao bì đóng gói phải đạt chuẩn, có đầy đủ thông tin: 
+                            tên sản phẩm, thành phần, hạn sử dụng, hướng dẫn bảo quản, thông tin liên hệ. 
+                            Tré Bà Đệ đã thiết kế lại bao bì với phong cách hiện đại nhưng vẫn giữ được nét truyền thống, 
+                            sử dụng vật liệu thân thiện môi trường.
+                        </p>
+                        
+                        <h2>Tiêu Chí 4: Giá Trị Văn Hóa & Câu Chuyện</h2>
+                        <p>
+                            OCOP không chỉ đánh giá chất lượng sản phẩm mà còn xem xét giá trị văn hóa đằng sau. 
+                            Câu chuyện về Bà Đệ - người phụ nữ Huế mang công thức gia truyền vào Đà Nẵng, 
+                            hơn 60 năm gìn giữ và phát triển món ăn dân dã thành di sản ẩm thực, 
+                            đã được Hội đồng OCOP đánh giá cao về giá trị lịch sử và văn hóa.
+                        </p>
+                        
+                        <h2>Tiêu Chí 5: Đóng Góp Cho Cộng Đồng</h2>
+                        <p>
+                            Tré Bà Đệ không chỉ là một doanh nghiệp kinh doanh, mà còn tạo việc làm ổn định cho nhiều lao động địa phương, 
+                            đặc biệt là phụ nữ và người lớn tuổi. Chúng tôi cam kết trả lương công bằng, đảm bảo môi trường làm việc an toàn, 
+                            và tích cực tham gia các hoạt động xã hội, từ thiện tại cộng đồng.
+                        </p>
+                        
+                        <h2>Kết Luận: Chứng Nhận OCOP - Cam Kết Với Khách Hàng</h2>
+                        <p>
+                            Tấm chứng nhận OCOP 4 sao không phải là điểm đến, mà là điểm khởi đầu cho một hành trình mới. 
+                            Đó là cam kết của chúng tôi với khách hàng về một sản phẩm không chỉ ngon, mà còn an toàn, 
+                            có nguồn gốc rõ ràng, và mang trong mình trách nhiệm với cộng đồng. 
+                            Khi bạn chọn Tré Bà Đệ, bạn đang chọn sự yên tâm tuyệt đối.
+                        </p>
+                        
+                        <div class="article-cta">
+                            <p><strong>Trải nghiệm sản phẩm OCOP 4 sao chính hiệu</strong></p>
+                            <a href="products.html" class="btn btn-primary">MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TRÉ BÀ ĐỆ</h3>
+                    <p class="brand-slogan"><strong>Tinh hoa gia truyền, đậm vị Đà Nẵng</strong></p>
+                    <p>Di sản ẩm thực gia truyền từ 1956</p>
+                    <p class="ocop-footer">🏆 Di sản OCOP 4-sao. Bảo chứng cho chất lượng.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="about.html">Câu Chuyện</a></li>
+                        <li><a href="products.html">Sản Phẩm</a></li>
+                        <li><a href="blog.html">Góc Ẩm Thực</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <p>📍 77 Hải Phòng, P. Thạch Thang<br>Q. Hải Châu, Đà Nẵng</p>
+                    <p>📞 0963 403 222</p>
+                    <p>✉️ hop-tac@trebade.com.vn</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Giờ Mở Cửa</h4>
+                    <p>7:00 Sáng - 9:00 Tối</p>
+                    <p>(Tất cả các ngày)</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tré Bà Đệ - 77 Hải Phòng. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup" id="cartPopup">
+        <div class="cart-popup-content">
+            <div class="cart-popup-header">
+                <h3>Giỏ Hàng</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Giỏ hàng trống</p>
+            </div>
+            <div class="cart-total">
+                <strong>Tổng cộng:</strong>
+                <span id="cartTotal">0 VNĐ</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">THANH TOÁN</button>
+        </div>
+    </div>
+
+    <!-- JavaScript modules in dependency order -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

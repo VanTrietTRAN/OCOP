@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Tré Bà Đệ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>TRÉ BÀ ĐỆ</h1>
+                    <span class="ocop-badge">OCOP 4★</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html">Câu Chuyện</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="blog.html">Góc Ẩm Thực</a></li>
+                    <li><a href="contact.html" class="active">Liên Hệ</a></li>
+                </ul>
+                <div class="nav-cart">
+                    <button class="cart-btn" id="cartBtn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>LIÊN HỆ CHÚNG TÔI</h1>
+            <p>Tìm đến địa chỉ di sản OCOP</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>THÔNG TIN LIÊN HỆ</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Địa chỉ chính gốc</h3>
+                            <p>77 Hải Phòng, P. Thạch Thang,<br>Q. Hải Châu, Đà Nẵng</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Điện thoại (Bán lẻ)</h3>
+                            <p><a href="tel:0963403222">0963 403 222</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email (Hợp tác / Bán sỉ)</h3>
+                            <p><a href="mailto:hop-tac@trebade.com.vn">hop-tac@trebade.com.vn</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h3>Giờ mở cửa</h3>
+                            <p><strong>7:00 Sáng - 9:00 Tối</strong><br>(Tất cả các ngày)</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Kết nối với chúng tôi</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon facebook">📘</a>
+                            <a href="#" class="social-icon instagram">📷</a>
+                            <a href="#" class="social-icon zalo">💬</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>GỬI YÊU CẦU CHO CHÚNG TÔI</h2>
+                    <p class="form-subtitle">Dành cho khách hàng muốn đặt hàng số lượng lớn hoặc hợp tác kinh doanh</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ và tên *</label>
+                            <input type="text" id="name" name="name" required placeholder="Nhập họ tên của bạn">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Nhập email của bạn">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Loại yêu cầu *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Chọn loại yêu cầu --</option>
+                                <option value="retail">Đặt hàng lẻ</option>
+                                <option value="wholesale">Đặt hàng sỉ</option>
+                                <option value="cooperation">Hợp tác kinh doanh</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nội dung yêu cầu *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Nhập nội dung chi tiết..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">GỬI YÊU CẦU</button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <p>✅ Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">TÌM ĐƯỜNG ĐẾN 77 HẢI PHÒNG</h2>
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4612.630499639223!2d108.21348017587867!3d16.071990584608024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219691b584097%3A0xe13b0776411de462!2zVHLDqSBCw6AgxJDhu4c!5e1!3m2!1svi!2s!4v1762401338050!5m2!1svi!2s" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p class="map-note">
+                📍 Cơ sở nằm ngay trên đường Hải Phòng, dễ dàng tìm thấy. Có chỗ đậu xe thuận tiện.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>ĐẾN THĂM CHÚNG TÔI HÔM NAY</h2>
+            <p>Trải nghiệm trực tiếp hương vị di sản OCOP 4 sao tại 77 Hải Phòng</p>
+            <a href="products.html" class="btn btn-primary">XEM SẢN PHẨM</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TRÉ BÀ ĐỆ</h3>
+                    <p class="brand-slogan"><strong>Tinh hoa gia truyền, đậm vị Đà Nẵng</strong></p>
+                    <p>Di sản ẩm thực gia truyền từ 1956</p>
+                    <p class="ocop-footer">🏆 Di sản OCOP 4-sao. Bảo chứng cho chất lượng.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="about.html">Câu Chuyện</a></li>
+                        <li><a href="products.html">Sản Phẩm</a></li>
+                        <li><a href="blog.html">Góc Ẩm Thực</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <p>📍 77 Hải Phòng, P. Thạch Thang<br>Q. Hải Châu, Đà Nẵng</p>
+                    <p>📞 0963 403 222</p>
+                    <p>✉️ hop-tac@trebade.com.vn</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Giờ Mở Cửa</h4>
+                    <p>7:00 Sáng - 9:00 Tối</p>
+                    <p>(Tất cả các ngày)</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tré Bà Đệ - 77 Hải Phòng. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup" id="cartPopup">
+        <div class="cart-popup-content">
+            <div class="cart-popup-header">
+                <h3>Giỏ Hàng</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Giỏ hàng trống</p>
+            </div>
+            <div class="cart-total">
+                <strong>Tổng cộng:</strong>
+                <span id="cartTotal">0 VNĐ</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">THANH TOÁN</button>
+        </div>
+    </div>
+
+    <!-- JavaScript modules in dependency order -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
